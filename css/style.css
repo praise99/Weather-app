@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #ADB1CC;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin: 30px 350px;
+    width: 600px;
+    background-color: white;
+    border-radius: 19px;
+    height: 595px;
+    
+}
+.sectA{
+    margin:8px ;
+    margin-left:18px ;
+    display: flex;
+}
+.sectA-title{
+    width: 50%;
+    font-size: 20px;
+    color: #333866;
+    margin-top:-7px ;
+    font-family: 700;
+}
+.sectA-input{
+    width: 50%;
+    margin-right:-50px ;
+    margin-top:25px ;
+}
+.country-id{
+    width: 70%;
+    padding: 7px;
+}
+.submit-btn{
+    width: 60px;
+    height: 33px;
+}
+.sectB{
+    margin-left:18px ;
+    margin-top:-45px ;
+}
+.location{
+    font-size: 35px;
+    color: #333866;
+}
+.country{
+    margin-top:-43px ;
+    font-family: 700;
+    font-size: 20px;
+    color: #333866;
+}
+.lat{
+    margin-top:-13px ;
+    font-family: 400;
+    font-size: 11px;
+}
+.long{
+    margin-top:-13px ;
+    font-family: 400;
+    font-size: 11px;
+}
+.sectC{
+    margin-top:-20px ;
+    color: #333866;
+    display: flex;
+    
+}
+.sectC-title{
+    text-align: center;
+    color: #333866;
+    
+}
+.sectC-content{
+    display: flex;
+    margin-right:280px ;
+    margin-top: -50px;
+
+}
+.sectC-temp{
+    width: 50%;
+    margin-left:60px ;
+    margin-top:0px ;
+}
+.temp{
+    font-size: 58px;
+    color: #333866;
+}
+.degree{
+    margin-top:60px ;
+}
+.celcuis{
+    margin-top:60px ;
+    font-size: 23px;
+}
+.temp-desc{
+    margin-top:120px ;
+    margin-left:-84px ;
+}
+.humidity{
+    background-color: #6b79fa;
+    margin-left:28px ;
+    margin-top:-9px ;
+    width:150px ;
+    border-radius: 11px;
+    color: white;
+    
+}
+.pressure{
+    background-color: #6b79fa;
+    margin-left:230px ;
+    width:150px ;
+    margin-top:-183px ;
+    border-radius: 11px;
+    color: white;
+    
+}
+.wind-speed{
+    background-color: #6b79fa;
+    margin-left:425px ;
+    width:150px ;
+    margin-top:-180px ;
+    border-radius: 11px;
+    color: white;
+    
+}
+.humidity-title{
+    margin-left:11px ;
+    padding-top:14px ;
+}
+.humidity-desc{
+    margin-left:11px ;
+    font-size: 25px;
+}
+.humidity-percent{
+    margin-top:-59px ;
+    margin-left:45px ;
+}
+.humidity-contri{
+    margin-top:35px ;
+    margin-left:11px ;
+}
+.pressure-title{
+    margin-left:11px ;
+    padding-top:14px ;
+}
+.pressure-desc{
+    margin-left:11px ;
+    font-size: 25px;
+}
+.pressure-percent{
+    margin-top:-59px ;
+    margin-left:45px ;
+}
+.pressure-contri{
+    margin-top:35px ;
+    margin-left:11px ;
+}
+.wind-title{
+    margin-left:11px ;
+    padding-top:14px ;
+}
+.wind-desc{
+    margin-left:11px ;
+    font-size: 25px;
+}
+.wind-percent{
+    margin-top:-59px ;
+    margin-left:45px ;
+}
+.wind-contri{
+    margin-top:35px ;
+    margin-left:11px ;
+}
+
+

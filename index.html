@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header class="sectA">
+                <div class="sectA-title">
+                    <h2>Hello, Welcome</h2>
+                </div>
+                <div class="sectA-input">
+                    <input type="text" name="Country" class="country-id" placeholder="Enter Your Country">
+                    <button class="submit-btn">Search</button>
+                </div>
+            </header>
+            <section class="sectB">
+                <div>
+                    <h3 class="location">Lagos</h3>
+                    <p class="country">Nigeria</p>
+                    <p class="lat">27th,august 2020</p>
+                    <p class="long">27th,august 2020</p>
+                    <h2 class="sectC-title">Today<h2>
+                </div>
+            </section>
+            
+            <section class="sectC">
+                
+                <div class="sectC-temp">
+                    <img src="images/unknown.png" alt="temp-img" class="sectC-temp">
+                </div>
+                <div class="sectC-content">
+                    <h2 class="temp">19</h2>
+                    <p class="degree">o</p>
+                    <p class="celcuis">C</p>
+                    <p class="temp-desc">Sunny</p>
+                </div>
+            </section>
+            <section class="humidity">
+                <h4 class="humidity-title">Humidity</h4>
+                <p class="humidity-desc">40</p>
+               <!-- <p class="humidity-percent">%</p>--> 
+                <p class="humidity-contri">normal</p>
+            </section>
+            <section class="pressure">
+                <h4 class="pressure-title">Pressure</h4>
+                <p class="pressure-desc">40</p>
+              <!--  <p class="pressure-percent">psi</p>--> 
+                <p class="pressure-contri">normal</p>
+            </section>
+            <section class="wind-speed">
+                <h4 class="wind-title">Wind</h4>
+                <p class="wind-desc">40</p>
+              <!--  <p class="wind-percent">km/h</p>--> 
+                <p class="wind-contri">normal</p>
+            </section>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
