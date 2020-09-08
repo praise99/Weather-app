@@ -26,6 +26,11 @@ body{
     margin-top:-7px ;
     font-family: 700;
 }
+.sect-desc{
+    color:#333866;
+    margin-top:-30px ;
+    font-size:12px ;
+}
 .sectA-input{
     width: 50%;
     margin-right:-50px ;
@@ -34,10 +39,14 @@ body{
 .country-id{
     width: 70%;
     padding: 7px;
+    border: 2px solid  #95BCFF ;
 }
 .submit-btn{
     width: 60px;
     height: 33px;
+    background: white ;
+    color: #333866;
+    border: 2px solid #95BCFF ;
 }
 .sectB{
     margin-left:18px ;
@@ -45,7 +54,7 @@ body{
 }
 .location{
     font-size: 35px;
-    color: #333866;
+    color:  #333866;
 }
 .country{
     margin-top:-43px ;
@@ -56,17 +65,18 @@ body{
 .lat{
     margin-top:-13px ;
     font-family: 400;
-    font-size: 11px;
+    font-size: 14px;
 }
 .long{
     margin-top:-13px ;
     font-family: 400;
-    font-size: 11px;
+    font-size: 14px;
 }
 .sectC{
     margin-top:-20px ;
     color: #333866;
     display: flex;
+    margin-left:90px ;
     
 }
 .sectC-title{
@@ -101,30 +111,27 @@ body{
     margin-left:-84px ;
 }
 .humidity{
-    background-color: #6b79fa;
     margin-left:28px ;
-    margin-top:-9px ;
+    margin-top:60px ;
     width:150px ;
     border-radius: 11px;
-    color: white;
+    color: #333866;
     
 }
 .pressure{
-    background-color: #6b79fa;
     margin-left:230px ;
     width:150px ;
-    margin-top:-183px ;
+    margin-top:-95px ;
     border-radius: 11px;
-    color: white;
+    color: #333866;
     
 }
 .wind-speed{
-    background-color: #6b79fa;
     margin-left:425px ;
     width:150px ;
-    margin-top:-180px ;
+    margin-top:-100px ;
     border-radius: 11px;
-    color: white;
+    color: #333866;
     
 }
 .humidity-title{
@@ -133,7 +140,9 @@ body{
 }
 .humidity-desc{
     margin-left:11px ;
-    font-size: 25px;
+   color: black;
+    margin-top:-10px ;
+    font-size: 18px;
 }
 .humidity-percent{
     margin-top:-59px ;
@@ -149,7 +158,9 @@ body{
 }
 .pressure-desc{
     margin-left:11px ;
-    font-size: 25px;
+    color: black;
+    margin-top:-10px ;
+    font-size: 18px;
 }
 .pressure-percent{
     margin-top:-59px ;
@@ -166,6 +177,9 @@ body{
 .wind-desc{
     margin-left:11px ;
     font-size: 25px;
+    color: black;
+    margin-top:-10px ;
+    font-size: 18px;
 }
 .wind-percent{
     margin-top:-59px ;

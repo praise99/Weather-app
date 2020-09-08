@@ -1,0 +1,44 @@
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px){
+    body{
+       
+      
+    }
+    .container {
+        margin: 20px 40px;
+        width: 350px;
+        background-color: white;
+        border-radius: 19px;
+        height: auto;
+        overflow-x: hidden;
+    }
+    .sectA{
+        flex-direction: column;
+        overflow-x: hidden;
+        
+    }
+    .sectB{
+        overflow-y: hidden;
+    }
+    .sectC{
+        flex-direction: column;
+        overflow-x: hidden;
+        
+    }
+    .humidity{
+        overflow-x: hidden;
+    }
+    
+    .pressure {
+        margin-left: 0px;
+        margin-top: -5px;
+        color: #333866;
+        overflow-x: hidden;
+    }
+    .wind-speed {
+        margin-left: 0px;
+        margin-top: -60px;
+        color: #333866;
+        overflow-x: hidden;
+       
+    }
+}

@@ -14,6 +14,12 @@ const latitude=document.querySelector(".lat");
 const longitude=document.querySelector(".long");
 const icon=document.querySelector(".sectC-temp");
 
+
+
+
+
+
+
 button.addEventListener("click", function(){
     fetch("https://api.openweathermap.org/data/2.5/weather?q="+inputValue.value+"&appid=bde93a81cb4244cd36483e44115d96d9")
     .then(response => response.json())
@@ -29,23 +35,81 @@ button.addEventListener("click", function(){
         var latitudeValue=data["coord"]["lat"]
         var longitudeValue=data["coord"]["lon"]
         var iconValue=data["weather"][0]["icon"]
+        
 
+       
+
+
+
+        var converted=tempValue-273
+        var tempValuesign=Number( converted.toPrecision(3))
 
 
         locate.innerHTML=locationValue;
-        temperature.innerHTML=tempValue;
+        temperature.innerHTML=tempValuesign;
         tempDesc.innerHTML=descValue;
         country.innerHTML=countryValue;
-        humidity.innerHTML=humidityValue +" %";
-        pressure.innerHTML=pressureValue + " psi";
-        windSpeed.innerHTML=windValue +" km/h";
-        latitude.innerHTML="Latitude: "+ latitudeValue;
-        longitude.innerHTML="Longitude: "+ longitudeValue;
+        humidity.innerHTML=humidityValue +"%";
+        pressure.innerHTML=pressureValue + "hPa";
+        windSpeed.innerHTML=windValue +"m/s";
+        latitude.innerHTML="Latitude: "+ latitudeValue +"°";
+        longitude.innerHTML="Longitude: "+ longitudeValue + "°";
         icon.innerHTML="<img src=images/"+ iconValue +".png>";
+
+
+
+
+
+
+       
+
+
+         //creating weather data object
+        var weatherUpdate={
+            "location":locationValue,
+            "temperature":tempValuesign,
+            "tempDescription":descValue,
+            "country":countryValue,
+            "humidity":humidityValue,
+            "pressure":pressureValue,
+            "windSpeed":windValue,
+            "latitude":latitudeValue +"°",
+            "longitude":longitudeValue +"°",
+            "icon":iconValue
+        }
+        //storing data in local storage
+        var weatherSerialized=JSON.stringify(weatherUpdate);
+        
+
+        localStorage.setItem("weatherUpdate",weatherSerialized);
+        
+
+        
+
+
+
+
+
 
     })
 
-.catch(err => alert("wrong city"))
+.catch(err => alert("You Entered a Wrong City or Country. Check your spelling"))
 
 })
+
+
+//getting data from local storage
+var weatherDeserialized=JSON.parse(localStorage.getItem("weatherUpdate"))
+
+//displaying data offline
+locate.innerHTML=weatherDeserialized.location;
+temperature.innerHTML=weatherDeserialized.temperature;
+tempDesc.innerHTML=weatherDeserialized.tempDescription;
+country.innerHTML=weatherDeserialized.country;
+humidity.innerHTML=weatherDeserialized.humidity +" %";
+pressure.innerHTML=weatherDeserialized.pressure + " psi";
+windSpeed.innerHTML=weatherDeserialized.windSpeed +" km/h";
+latitude.innerHTML="Latitude: "+ weatherDeserialized.latitude;
+longitude.innerHTML="Longitude: "+ weatherDeserialized.longitude;
+icon.innerHTML="<img src=images/"+ weatherDeserialized.icon +".png>";
 
