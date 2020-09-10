@@ -3,60 +3,93 @@
        overflow: hidden; 
     }
     .container {
-       
-        margin: 20px 20px;
-        width: 390px;
+        margin: 20px 17px;
+        width: 250px;
         overflow-x: hidden;
         height: auto;
-        
     }
     .sectA{
         flex-direction: column;
         overflow-x: hidden;
         
     }
+    .sectA-title {
+        width: 50%;
+        font-size: 20px;
+        margin-top: -7px;
+        margin-left: 35px;
+    }
     .sectB{
         overflow-y: hidden;
         margin-top: -20px;
     }
-    .sectC{
-        
-        overflow-x: hidden;
-        margin-left: 0px;
-        margin-top: 20px;
-        overflow-x: hidden;
-        
+    .country {
+        margin-top: -53px;
     }
-    .humidity{
+    .long {
+        font-size: 12px;
+    }
+    .lat {
+        font-size: 12px;
+    }
+    
+    .sectC {
         overflow-x: hidden;
+        margin-left: -55px;
+        margin-top: 0px;
+        overflow-x: hidden;
+    }
+    .humidity {
+        margin-left: 8px;
+        margin-top: 60px;
+        width: 150px;
+        border-radius: 11px;
+        color: #333866;
+        font-size: 13px;
+        overflow-x: hidden;
+    }
+    .location {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+    .humidity-desc {
+        font-size: 16px;
+    }
+    .pressure-desc {
+        font-size: 16px;
+    }
+    .wind-desc {
+        font-size: 16px;
     }
     
     
     
     .country-id {
-        width: 54%;
+        width: 62%;
     }
     .sectA-input {
-        margin-left: 170px;
-        margin-top: -60px;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 100%;
     }
     .sect-desc {
         font-size: 13px;
         margin-bottom: 25px;
+        white-space: nowrap;
+        margin-left: -5px;
     }
-    .location {
-        font-size: 35px;
-        margin-bottom: 50px;
-    }
+    
     .pressure {
         overflow-x: hidden;
-        margin-left: 150px;
-        margin-top: -115px;
+        margin-left: 80px;
+        margin-top: -100px;
+        font-size: 13px;
     }
     .wind-speed {
         overflow-x: hidden;
-        margin-left: 270px;
-        margin-top: -116px;
+        margin-left: 167px;
+        margin-top: -100px;
+        font-size: 13px;
     }
 
 }
