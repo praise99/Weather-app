@@ -1,4 +1,67 @@
-@media only screen and (max-width: 768px), only screen and (max-device-width: 768px){
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+    body{
+       overflow: hidden; 
+    }
+    .container {
+       
+        margin: 20px 20px;
+        width: 390px;
+        overflow-x: hidden;
+        height: auto;
+        
+    }
+    .sectA{
+        flex-direction: column;
+        overflow-x: hidden;
+        
+    }
+    .sectB{
+        overflow-y: hidden;
+        margin-top: -20px;
+    }
+    .sectC{
+        
+        overflow-x: hidden;
+        margin-left: 0px;
+        margin-top: 20px;
+        overflow-x: hidden;
+        
+    }
+    .humidity{
+        overflow-x: hidden;
+    }
+    
+    
+    
+    .country-id {
+        width: 54%;
+    }
+    .sectA-input {
+        margin-left: 170px;
+        margin-top: -60px;
+    }
+    .sect-desc {
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+    .location {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    .pressure {
+        overflow-x: hidden;
+        margin-left: 150px;
+        margin-top: -115px;
+    }
+    .wind-speed {
+        overflow-x: hidden;
+        margin-left: 270px;
+        margin-top: -116px;
+    }
+
+}
+
+/*@media only screen and (max-width: 768px), only screen and (max-device-width: 768px){
     body{
        
       
@@ -41,4 +104,4 @@
         overflow-x: hidden;
        
     }
-}
+}*/
