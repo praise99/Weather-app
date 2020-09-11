@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-.container {
-    width: 100%;
-}
+
 
 @media (max-width: 767.98px) {
     body{
@@ -133,38 +131,60 @@
     }
     .container {
         margin: 20px 44px;
-        width: 600px;
+        width: 92%;
         background-color: white;
         border-radius: 19px;
         height: auto;
         overflow-x: hidden;
+        
     }
     .sectA{
         flex-direction: column;
         overflow-x: hidden;
+        height: 180px;
     }
     .sectA-input {
         width: 50%;
-        margin-left: 270px;
-        margin-top: -59px;
+        margin-left: 0px;
+        margin-top: -10px;
     }
     .country-id {
         width: 65%;
         padding: 15px;
         border: 2px solid #95BCFF;
+        font-size: 20px;
     }
     .submit-btn {
-        width: 60px;
-        height: 50px;
+        width: 90px;
+        height: 57px;
+        font-size: 20px;
+    }
+    .lat {
+        font-size: 20px;
+    }
+    .long {
+        font-size: 20px;
     }
     .sectB{
         overflow-x: hidden;
-        margin-top:5px ;
+        margin-top:-25px ;
     }
     .sectC{
         flex-direction: row;
         overflow-x: hidden;
         margin-top:0px ;
+         
+        text-align: center;
+    }
+    .sectC-content {
+        display: flex;
+        margin-top: -50px;
+        margin-left: -90px;
+    }
+    .sectC-temp {
+        width: 50%;
+        margin-left: 120px;
+        margin-top: 0px;
     }
     .sectC-title {
         font-size: 40px;
@@ -176,20 +196,20 @@
     .humidity{
         overflow-x: hidden;
         font-size: 30px;
-        margin: 0px;
+        margin-left: 30px;
     }
     
     .pressure {
-        margin-left: 235px;
+        margin-left: 385px;
         margin-top: -193px;
         overflow-x: hidden;
         font-size: 30px;
     }
     .wind-speed {
-        margin-left: 430px;
-        margin-top: -190px;
+        margin-top: -200px;
         overflow-x: hidden;
         font-size: 30px;
+        float: right;
     }
     .humidity-desc {
         font-size: 25px;
@@ -203,72 +223,100 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1199.98px){
-    .container {
-        margin: 30px 20px;
-        width: 530px;
-        overflow-x: hidden;
-    }
     body{
         overflow-x: hidden;
+      
     }
-    
-    .sectA{
-        overflow-x: hidden;
-    }
-    .sectB{
-        overflow-x: hidden;
-    }
-    .sectC{
-        overflow-x: hidden;
-        margin-left: 70px;
-    }
-    .humidity{
-        overflow-x: hidden;
-    }
-    .country-id {
-        width: 67%;
-    }
-    .pressure{
-        overflow-x: hidden;
-        margin-top: -115px;
-    }
-    .wind-speed{
-        overflow-x: hidden;
-        margin-top: -115px;
-    }
-
-}
-@media (min-width: 1200px) {
     .container {
-        margin: 30px 35px;
-        width: 600px;
+        margin: 20px 44px;
+        width: 92%;
+        background-color: white;
+        border-radius: 19px;
+        height: auto;
         overflow-x: hidden;
-    }
-    body{
-        overflow-x: hidden;
-    }
-    
-    .sectA{
-        overflow-x: hidden;
-    }
-    .sectB{
-        overflow-x: hidden;
-    }
-    .sectC{
-        overflow-x: hidden;
-    }
-    .humidity{
-        overflow-x: hidden;
-    }
-    .pressure{
-        overflow-x: hidden;
-        margin-top: -115px;
-        margin-left: 250px;
-    }
-    .wind-speed{
-        overflow-x: hidden;
-        margin-left: 455px;
-        margin-top: -120px;
         
     }
+    .sectA{
+        flex-direction: column;
+        overflow-x: hidden;
+        height: 180px;
+    }
+    .sectA-input {
+        width: 50%;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+    .country-id {
+        width: 65%;
+        padding: 15px;
+        border: 2px solid #95BCFF;
+        font-size: 20px;
+    }
+    .submit-btn {
+        width: 90px;
+        height: 57px;
+        font-size: 20px;
+    }
+    .lat {
+        font-size: 20px;
+    }
+    .long {
+        font-size: 20px;
+    }
+    .sectB{
+        overflow-x: hidden;
+        margin-top:-25px ;
+    }
+    .sectC{
+        flex-direction: row;
+        overflow-x: hidden;
+        margin-top:0px ;
+         
+        text-align: center;
+    }
+    .sectC-content {
+        display: flex;
+        margin-top: -50px;
+        margin-left: -170px;
+    }
+    .sectC-temp {
+        width: 50%;
+        margin-left: 150px;
+        margin-top: 0px;
+    }
+    .sectC-title {
+        font-size: 40px;
+    }
+    .sect-desc {
+        margin-top: -30px;
+        font-size: 20px;
+    }
+    .humidity{
+        overflow-x: hidden;
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    
+    .pressure {
+        margin-left: 485px;
+        margin-top: -193px;
+        overflow-x: hidden;
+        font-size: 30px;
+    }
+    .wind-speed {
+        margin-top: -200px;
+        overflow-x: hidden;
+        font-size: 30px;
+        float: right;
+    }
+    .humidity-desc {
+        font-size: 25px;
+    }
+    .pressure-desc {
+        font-size: 25px;
+    }
+    .wind-desc {
+        font-size: 25px;
+    }
+
 }
