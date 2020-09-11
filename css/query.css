@@ -1,53 +1,74 @@
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+@media (max-width: 767.98px) {
     body{
        overflow-x: hidden; 
     }
     .container {
-        margin: 20px 17px;
-        width: 390px;
+        margin: 0px 0px;
+        width: 100%;
         overflow-x: hidden;
-        height: auto;
+        height:700px;
+        border-radius: 0;
     }
-    .sectA{
+    .sectA {
+        margin-top: -30px;
         flex-direction: column;
         overflow-x: hidden;
-        
+        height: auto;
+        margin-right: 300px; 
+        width: fit-content;
     }
     .sectA-title {
         width: 50%;
         font-size: 35px;
         margin-top: -7px;
-        margin-left: 47px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    
+    
+    
+    .submit-btn {
+        width: 30%;
+        height: 50px;
+        font-size: 20px;
     }
     .sectB{
         overflow-x: hidden;
-        margin-top: 20px;
+        margin-top: -20px;
     }
     .country {
-        margin-top: -53px;
+        font-size: 20px;
     }
     .long {
-        font-size: 12px;
+        font-size: 17px;
     }
     .lat {
-        font-size: 12px;
+        font-size: 17px;
     }
     
     .sectC {
         overflow-x: hidden;
-        margin-left: 0px;
+        margin-left: 60px;
+        margin-top: -20px;
+        overflow-x: hidden;
+        justify-content: center; 
+    }
+    .sectC-temp {
+        width: 50%;
+        margin-left: 200px;
         margin-top: 0px;
-        overflow-x: hidden;
     }
-    .humidity {
-        margin-left: 8px;
-        margin-top: 60px;
-        width: 150px;
-        border-radius: 11px;
-        color: #333866;
-        font-size: 19px;
-        overflow-x: hidden;
-    }
+    
     .location {
         font-size: 25px;
         margin-bottom: 50px;
@@ -67,11 +88,13 @@
     .country-id {
         width: 67%;
         padding: 15px;
+        font-size: 20px;
     }
     .sectA-input {
         margin-left: 0px;
-        margin-top: 0px;
+        margin-top: -10px;
         width: 100%;
+        
     }
     .sect-desc {
         font-size: 20px;
@@ -80,35 +103,37 @@
         margin-left: 4px;
         margin-top: -50px;
     }
-    .submit-btn {
-        width: 20%;
-        padding: 15px;
-        height: 47px;
-    }
     
+    
+    .humidity {
+       
+        margin-top: -30px;
+        border-radius: 11px;
+        color: #333866;
+        font-size: 19px;
+        overflow-x: hidden;
+    }
     .pressure {
         overflow-x: hidden;
-        margin-left: 140px;
         margin-top: -130px;
         font-size: 19px;
     }
     .wind-speed {
         overflow-x: hidden;
-        margin-left: 277px;
-        margin-top: -130px;
         font-size: 19px;
+        display: none;
     }
 
 }
 
-/*@media only screen and (max-width: 768px), only screen and (max-device-width: 768px){
+@media (min-width: 768px) and (max-width: 1023.98px){
     body{
-       
+        overflow-x: hidden;
       
     }
     .container {
-        margin: 20px 40px;
-        width: 350px;
+        margin: 20px 44px;
+        width: 600px;
         background-color: white;
         border-radius: 19px;
         height: auto;
@@ -117,31 +142,133 @@
     .sectA{
         flex-direction: column;
         overflow-x: hidden;
-        
+    }
+    .sectA-input {
+        width: 50%;
+        margin-left: 270px;
+        margin-top: -59px;
+    }
+    .country-id {
+        width: 65%;
+        padding: 15px;
+        border: 2px solid #95BCFF;
+    }
+    .submit-btn {
+        width: 60px;
+        height: 50px;
     }
     .sectB{
-        overflow-y: hidden;
+        overflow-x: hidden;
+        margin-top:5px ;
     }
     .sectC{
-        flex-direction: column;
+        flex-direction: row;
         overflow-x: hidden;
-        
+        margin-top:0px ;
+    }
+    .sectC-title {
+        font-size: 40px;
+    }
+    .sect-desc {
+        margin-top: -30px;
+        font-size: 20px;
+    }
+    .humidity{
+        overflow-x: hidden;
+        font-size: 30px;
+        margin: 0px;
+    }
+    
+    .pressure {
+        margin-left: 235px;
+        margin-top: -193px;
+        overflow-x: hidden;
+        font-size: 30px;
+    }
+    .wind-speed {
+        margin-left: 430px;
+        margin-top: -190px;
+        overflow-x: hidden;
+        font-size: 30px;
+    }
+    .humidity-desc {
+        font-size: 25px;
+    }
+    .pressure-desc {
+        font-size: 25px;
+    }
+    .wind-desc {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199.98px){
+    .container {
+        margin: 30px 20px;
+        width: 530px;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+    .sectA{
+        overflow-x: hidden;
+    }
+    .sectB{
+        overflow-x: hidden;
+    }
+    .sectC{
+        overflow-x: hidden;
+        margin-left: 70px;
     }
     .humidity{
         overflow-x: hidden;
     }
+    .country-id {
+        width: 67%;
+    }
+    .pressure{
+        overflow-x: hidden;
+        margin-top: -115px;
+    }
+    .wind-speed{
+        overflow-x: hidden;
+        margin-top: -115px;
+    }
+
+}
+@media (min-width: 1200px) {
+    .container {
+        margin: 30px 35px;
+        width: 600px;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
     
-    .pressure {
-        margin-left: 0px;
-        margin-top: -5px;
-        color: #333866;
+    .sectA{
         overflow-x: hidden;
     }
-    .wind-speed {
-        margin-left: 0px;
-        margin-top: -60px;
-        color: #333866;
+    .sectB{
         overflow-x: hidden;
-       
     }
-}*/
+    .sectC{
+        overflow-x: hidden;
+    }
+    .humidity{
+        overflow-x: hidden;
+    }
+    .pressure{
+        overflow-x: hidden;
+        margin-top: -115px;
+        margin-left: 250px;
+    }
+    .wind-speed{
+        overflow-x: hidden;
+        margin-left: 455px;
+        margin-top: -120px;
+        
+    }
+}

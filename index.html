@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+<html lang='en'>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Weather App</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A weather app that uses openmapAPI">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/query.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -15,7 +16,7 @@
        <meta name="msapplication-TileColor" content="#221e1d">
        <meta name="theme-color" content="#372f2f">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+        
     <body>
         <div class="container">
             <header class="sectA">
@@ -49,22 +50,28 @@
                     <p class="temp-desc">Sunny</p>
                 </div>
             </section>
-            <section class="humidity">
-                <h4 class="humidity-title">Humidity</h4>
-                <p class="humidity-desc">40</p>
-            </section>
-            <section class="pressure">
-                <h4 class="pressure-title">Pressure</h4>
-                <p class="pressure-desc">40</p>
-              <!--  <p class="pressure-percent">psi</p>--> 
-                
-            </section>
-            <section class="wind-speed">
-                <h4 class="wind-title">Wind</h4>
-                <p class="wind-desc">40</p>
-              <!--  <p class="wind-percent">km/h</p>--> 
-               
-            </section>
+            <div class="component">
+                <section class="humidity">
+                    <h4 class="humidity-title">Humidity</h4>
+                    <p class="humidity-desc">40</p>
+                </section>
+                <section class="pressure">
+                    <h4 class="pressure-title">Pressure</h4>
+                    <p class="pressure-desc">40</p>
+                  <!--  <p class="pressure-percent">psi</p>--> 
+                    
+                </section>
+                <section class="wind-speed">
+                    <h4 class="wind-title">Wind</h4>
+                    <p class="wind-desc">40</p>
+                  <!--  <p class="wind-percent">km/h</p>--> 
+                   
+                </section>
+            </div>
+            
+        
+            
+            
         </div>
         
         <script src="script.js"></script> </script>
@@ -78,4 +85,5 @@
          <!-- Initialize Firebase -->
         <script src="/__/firebase/init.js"></script>
     </body>
+</html>
 </html>
