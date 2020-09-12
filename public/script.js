@@ -113,3 +113,23 @@ latitude.innerHTML="Latitude: "+ weatherDeserialized.latitude;
 longitude.innerHTML="Longitude: "+ weatherDeserialized.longitude;
 icon.innerHTML="<img src=images/"+ weatherDeserialized.icon +".png>";
 
+
+//===================SEARCH QUERY==================
+/*const setQueryAfterKeypress = (e) => {
+    if (e.keyCode == 13) {
+      query = inputValue.value;
+      getResults({ query: query });
+    }
+  };
+  
+  const setQueryAfterClick = (e) => {
+    query = inputValue.value;
+    getResults({ query: query });
+  };
+  
+  searchbox.addEventListener("keypress", setQueryAfterKeypress);
+  search_btn.addEventListener("click", setQueryAfterClick);*/
+  
+  //==================SERVICE WORKER==================
+  
+

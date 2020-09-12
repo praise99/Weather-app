@@ -9,6 +9,7 @@
 @media (max-width: 767.98px) {
     body{
        overflow-x: hidden; 
+       background-color: white;
     }
     .container {
         margin: 0px 0px;
@@ -16,6 +17,7 @@
         overflow-x: hidden;
         height:700px;
         border-radius: 0;
+        background-color: white;
     }
     .sectA {
         margin-top: -30px;
